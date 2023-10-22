@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Calistoga&family=Poppins:wght@100;200;300;400;500;600;700&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+
+}
+:root{
+    --text-color: #000000;
+    --main-color: #83b735;
+}
+
+section{
+    padding: 50px 10%;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 100px;
+    background-color: white;
+
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.logo span{
+    color: #83b735;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(Images/background.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+.home-text h1{
+    font-size: 2.7rem;
+}
+.home-text p{
+    font-size: 0.938rem;
+    margin: 0.4rem 0 1.8rem;
+}
+.home-text  span{
+    color: #83b735;
+}
+.btn{
+    padding: 10px 14px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.3rem;
+    font-size: 14px;
+}
+.btn:hover{
+    background: #8fc53d;
+    
+}
+.heading{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 25px;
+}
+.about{
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.heading h1{
+    color: black;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+    width: 100%;
+
+}
+.about-info{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+}
+.about-info h2{
+    
+    font-size: 35px;
+    margin-bottom: 20px;
+    
+}
+.about-info h2 span{
+    color: #8fc53d;
+}
+.about-info p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+
+
+}
+.hero-image{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+   
+
+}
+img{
+   
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/*font-family: 'Bebas Neue', sans-serif;*/
+
+.title{
+    text-align: center;
+    margin: 40px;
+    font-size: 35px;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.wrapper{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+   
+
+}
+.wrapper .box{
+    
+    position: relative;
+    width: 320px;
+    background: white;
+    padding: 100px 40px 60px;
+    border-radius: 20px;
+    box-shadow:  15px 45px rgba(0, 0, 0, .1);
+    /*
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);*/
+
+}
+
+.wrapper .box:hover{
+    background-color: #8fc53d;
+    color: white;
+    transition: .3s;
+}
+.box h2{
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;;
+}
+.contact h2{
+    font-size: 45px;
+    margin: 30px;
+    
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    margin-top: 5%;
+
+    width: 100%;
+    background-color: white;
+    font-family: sans-serif;
+}
+.contact-box{
+align-items: center;
+    width: 500px;
+    background-color: #ffff;
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+ 
+    
+}
+form{
+    margin: 35px;
+}
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+
+}
+.btn{
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #47c35a;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .abt p1{
+    padding-top: 10px;
+   font-size: 15px; 
+}
+.footer .serv li{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<section class="shop" id="shop">
+    <div class="heading">
+        <span>New Arrival</span>
+        <h2>Shop Now</h2>
+    </div>
+    <!--CONTENT-->
+    <div class="shop-container">
+        <div class="box">
+            <div class="box-image">
+                <img src="Images/p1.jpg" alt="">
+            </div>
+            <div class="title-price">
+                <h3>Gray Chair</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half' ></i>
+
+
+             </div>
+            </div>
+            <span>46$</span>
+            <i class='bx bx-cart' ></i> 
+
+            
+        </div>
+    </div>
+
+</section>
+*/
+
